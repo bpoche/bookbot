@@ -1,5 +1,3 @@
-from pprint import pprint
-
 def book_text_to_string(book_loc):
     with open(book_loc) as f:
         file_contents = f.read()
@@ -37,5 +35,6 @@ def print_report(book_loc):
         print(f"The '{char_dict['name']}' character was found {char_dict['num']} times")
     print("--- End report ---")
 
-book_loc = "books/frankenstein.txt"
-print_report(book_loc)
+if __name__ == '__main__':
+    book_loc = "books/frankenstein.txt"
+    print_report(book_loc)
